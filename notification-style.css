@@ -1,0 +1,175 @@
+:root {
+  /* Primary */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+
+  /* Google Font (500/800) */
+  --Google-font: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍  */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  box-sizing: initial;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+::selection {
+  color: #0d00ff;
+  background: #ff9676;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: var(--Google-font);
+  font-size: 1rem;
+}
+
+p {
+  margin: 0;
+  margin-left: 50px;
+  color: var(--Dark-grayish-blue);
+}
+
+img {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+img .text__notification {
+  position: relative;
+}
+
+.mark__read {
+  color: var(--Grayish-blue);
+}
+
+.flex__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paragraph__text {
+  padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+  max-width: 32.187rem;
+  height: 4.375rem;
+  border: 1px solid hsl(218, 14%, 63%);
+  border-radius: 5px;
+}
+
+.time__class {
+  color: var(--Grayish-blue);
+}
+
+.names__group {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.group__icons {
+  width: 40.5rem;
+  height: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comm__flex {
+  display: flex;
+  gap: 175px;
+}
+
+.bg_notification {
+  background-color: rgba(0, 162, 255, 0.226);
+}
+
+.highlight_info {
+  margin-left: 5px;
+  color: var(--Dark-grayish-blue);
+  font-weight: 800;
+}
+
+.text__element {
+  height: 11.25rem;
+}
+
+.para {
+  margin-bottom: 5px;
+}
+.blue__highlight {
+  margin-left: 5px;
+  color: var(--Blue);
+  font-weight: 800;
+}
+
+span.names__group {
+  margin-right: 5px;
+}
+
+@media (max-width: 27em) {
+  section {
+    width: 22rem;
+    margin-left: -17px;
+  }
+
+  .paragraph__text {
+    box-sizing: border-box;
+    max-width: 18.75rem;
+    height: 9rem;
+  }
+
+  .group__icons {
+    max-width: 100%;
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .text__element {
+    height: 15.625rem;
+  }
+
+  .comm__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .chess {
+    margin-left: -50px;
+  }
+}
