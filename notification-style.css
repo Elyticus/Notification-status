@@ -145,6 +145,10 @@ span.names__group {
     margin-left: -17px;
   }
 
+  .flex__group {
+    margin-top: 50px;
+  }
+
   .paragraph__text {
     box-sizing: border-box;
     max-width: 18.75rem;
