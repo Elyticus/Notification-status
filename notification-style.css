@@ -51,12 +51,30 @@ body {
   margin: 0;
   font-family: var(--Google-font);
   font-size: 1rem;
+  background: hsla(205, 33%, 90%, 0.404);
+}
+
+section {
+  background: var(--White);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 30px 0px 30px 0px hsla(224, 21%, 14%, 0.034);
 }
 
 p {
   margin: 0;
   margin-left: 50px;
   color: var(--Dark-grayish-blue);
+}
+
+a {
+  color: var(--Very-dark-blue);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+h2 {
+  color: var(--Very-dark-blue);
 }
 
 img {
@@ -67,6 +85,10 @@ img {
 
 img .text__notification {
   position: relative;
+}
+
+img.chess:hover {
+  cursor: pointer;
 }
 
 .mark__read {
@@ -87,13 +109,18 @@ img .text__notification {
   border-radius: 5px;
 }
 
+.paragraph__text:hover {
+  cursor: pointer;
+  background: hsla(219, 85%, 26%, 0.13);
+}
+
 .time__class {
   color: var(--Grayish-blue);
 }
 
-.names__group {
-  color: var(--Very-dark-blue);
-  font-weight: 800;
+.names__group:hover {
+  cursor: pointer;
+  color: var(--Blue);
 }
 
 .group__icons {
@@ -112,14 +139,19 @@ img .text__notification {
   gap: 175px;
 }
 
-.bg_notification {
-  background-color: rgba(0, 162, 255, 0.226);
+.light__class {
+  background-color: hsla(211, 68%, 94%, 0.466);
 }
 
 .highlight_info {
   margin-left: 5px;
   color: var(--Dark-grayish-blue);
   font-weight: 800;
+}
+
+.highlight_info:hover {
+  cursor: pointer;
+  color: var(--Blue);
 }
 
 .text__element {
@@ -129,23 +161,68 @@ img .text__notification {
 .para {
   margin-bottom: 5px;
 }
+
 .blue__highlight {
   margin-left: 5px;
   color: var(--Blue);
   font-weight: 800;
 }
 
+.blue__highlight {
+  cursor: pointer;
+}
+
+.mark__read {
+  background: transparent;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 span.names__group {
   margin-right: 5px;
 }
 
+.notification__number {
+  color: var(--White);
+  background-color: var(--Blue);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  display: block;
+  background-color: var(--Red);
+  border-radius: 100%;
+  margin-left: 5px;
+  align-self: center;
+}
+
+.flex__notification {
+  display: flex;
+  gap: 5px;
+}
+
 @media (max-width: 27em) {
+  body {
+    background: var(--White);
+  }
+
   section {
-    width: 22rem;
+    width: 21rem;
     margin-left: -17px;
+    box-shadow: none;
   }
 
   .flex__group {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-top: 150px;
   }
 
@@ -174,6 +251,24 @@ span.names__group {
   }
 
   .chess {
-    margin-left: -50px;
+    margin-left: -40px;
+  }
+
+  .circle {
+    float: inline-end;
+    display: block;
+    align-self: center;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .flex__notification {
+    max-width: 100%;
+    display: block;
+    flex-direction: column;
+  }
+
+  .names__group {
+    margin-right: 5px;
   }
 }
